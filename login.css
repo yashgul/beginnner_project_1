@@ -1,0 +1,123 @@
+body
+{
+	background-color:#F2B830;
+	
+
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* use viewport-relative units to cover page fully */
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* include border and padding in element width and height */
+* {
+  box-sizing: border-box;
+}
+
+#login_box
+{
+	
+	
+	
+	
+	
+	background-color: white;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2),
+	 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+	 z-index:3;
+	 height:408px;
+}
+main
+{
+	
+	display:flex;
+	justify-content: center;
+	width:100%;
+	
+	
+	
+	
+	
+}
+#navbar
+{
+	height:75px;
+
+}
+
+
+.box
+{
+	border: none;
+  border-bottom: 2px solid lightgray;
+outline: none;
+
+width:100%;
+
+}
+.text
+{
+	padding:30px;
+	
+}
+.check
+{
+	padding:20px;
+}
+.but
+{
+	padding:20px;
+}
+button[type=submit]
+{
+	width:100%;
+	background-color: #EA3F2F;
+	border:none;
+	height: 5vh;
+	color: white;
+	border-radius: 5px;
+}
+
+input:hover, input:focus
+{
+	border-bottom: 2px solid #F2B830;
+}
+#piz
+{
+	
+	
+	 padding: 0px;
+	 margin:0px;
+}
+img
+{
+	box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.2),
+	 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+
+	 
+}
+@media only screen and (max-width: 1200px)
+{
+	
+	
+	main
+	{
+		flex-direction: column;
+	}
+	img
+	{
+		width:100vw;
+	}
+	
+
+
+}
+
+
