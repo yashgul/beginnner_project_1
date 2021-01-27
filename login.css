@@ -1,8 +1,6 @@
 body
 {
-	background-color:#F2B830;
-	
-
+	background-color:#CFA76E;
 }
 html,
 body {
@@ -10,46 +8,106 @@ body {
   padding: 0;
 }
 
-/* use viewport-relative units to cover page fully */
+
 body {
   height: 100vh;
   width: 100vw;
 }
 
-/* include border and padding in element width and height */
+
 * {
   box-sizing: border-box;
+}
+#logo
+{
+	height:47px;
+	float:left;
 }
 
 #login_box
 {
-	
-	
-	
-	
-	
 	background-color: white;
-	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2),
-	 0 8px 20px 0 rgba(0, 0, 0, 0.19);
-	 z-index:3;
+	
+	 
 	 height:408px;
+
 }
 main
 {
-	
 	display:flex;
 	justify-content: center;
 	width:100%;
-	
-	
-	
-	
-	
 }
-#navbar
-{
-	height:75px;
 
+a {
+  text-decoration: none;
+}
+
+#navbar{
+  font-family: monospace;
+  width:100vw;
+  background-color: #E46B1D;
+  height:47px;
+}
+
+ul {
+  background:  #E46B1D;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+
+  color: #fff;
+  background:  #E46B1D;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  z-index:99;
+}
+  
+li a {
+  color: #fff;
+}
+
+li:hover,
+li:focus-within {
+  background: darkorange;
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
 }
 
 
@@ -61,6 +119,17 @@ outline: none;
 
 width:100%;
 
+}
+.nothing
+{
+	float: right;
+	padding:5px;
+	padding-top: 20px;
+}
+#line
+{
+	border-bottom: 2px solid gray;
+	clear: both;
 }
 .text
 {
@@ -78,7 +147,7 @@ width:100%;
 button[type=submit]
 {
 	width:100%;
-	background-color: #EA3F2F;
+	background-color: darkorange;
 	border:none;
 	height: 5vh;
 	color: white;
@@ -87,7 +156,7 @@ button[type=submit]
 
 input:hover, input:focus
 {
-	border-bottom: 2px solid #F2B830;
+	border-bottom: 2px solid #CFA76E;
 }
 #piz
 {
@@ -96,9 +165,10 @@ input:hover, input:focus
 	 padding: 0px;
 	 margin:0px;
 }
-img
+
+.pizimg
 {
-	box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.2),
+	box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.29),
 	 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 
 	 
@@ -111,13 +181,29 @@ img
 	{
 		flex-direction: column;
 	}
-	img
+	.pizimg
 	{
 		width:100vw;
 	}
-	
-
-
+	#dropdown
+	{
+		display:block;
+		clear:left;
+	}
+	#navbar
+	{
+		height: 94px;
+	}
+	#logo
+	{
+		position: relative;
+		left:73px;
+	}
+	#dropdown
+	{
+		position: relative;
+		left:30px;
+	}
 }
 
 
