@@ -5,20 +5,37 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
-<div id="navbar">
+
+ 
+    
+  <div id="navbar">
+    <img src="logo.jpg" id="logo">
+  
+<div id="dropdown">
+  <ul>
+    <li><a href="#">Log In</a></li>
+    <li><a href="#">Sign Up</a></li>
+    <li><a href="#" aria-haspopup="true">Contact</a>
+      <ul class="dropdown" aria-label="submenu">
+        <li><a href="#">+91 9345678XX</a></li>
+        <li><a href="#">blazepizza@gmail.com</a></li>
+        
+      </ul>
+    </li>
+    <li><a href="#">Cart</a></li>
+  </ul>
+</div>
 </div>
 
-<main>
-    
 
+<main>
   
   <div id="piz">
-    <img src="pizza.jpg">
+    <img src="pizza.jpg" class="pizimg">
   </div>
    <form >
   
-
-  <div id="login_box">
+  <div id="login_box" class="pizimg">
    
         <div class="text">
        <input type="text" placeholder="Enter Username" name="uname" required class="box">
@@ -27,13 +44,13 @@
       <div class="text">
       <input type="password" placeholder="Enter Password" name="psw" required class="box">
       </div>
-
+<div class="check">
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+   </div>
       <div class="but"> 
          <button type="submit">Login</button>
     </div>
-    <div class="check">
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-   </div>
+    
    <div class="check">
        If you're new click <a href src="">here</a>
    </div>
