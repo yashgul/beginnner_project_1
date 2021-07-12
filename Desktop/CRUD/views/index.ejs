@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css"   href="/css/signup.css">
+ 
+</head>
+<body >
+
+<script  src="/js/index.js"></script>
+ 
+
+    
+<form action="/filter" method="POST">
+ 
+
+  <select name="filterorder" >
+    <option>Genre</option>
+    <option>Rating</option>
+    <option>User</option>
+    <option>Title</option>
+  </select>
+  <button type="submit">Submit</button>
+</form>
+      
+      
+     
+    
+     
+   
+
+
+<h2>Modal Signup Form</h2>
+    
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+ 
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Delete</button>
+
+    <button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Update</button>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <form class="modal-content animate" action="/quotes" method="POST">
+            <div class="container addpad">
+                
+               
+                <div class="v-container ">
+                  <div class="container spacing-right">
+                  <label><b>User</b></label>
+                  <input type="text"  name="time" required placeholder="User Name">
+                  </div>
+
+                  <div class="container spacing-left">
+                  <label><b>Title</b></label>
+                  <input type="text" placeholder="Enter Password" name="psw" required>
+                  </div>
+               </div>
+
+               <div class="v-container ">
+                  <div class="container spacing-right">
+                  <label><b>Story</b></label>
+                  <input type="number"  name="story" required min=1 step=1 max=5>
+                  </div>
+
+                  <div class="container spacing-left">
+                  <label><b>Plot</b></label>
+                 <input type="number"  name="plot" required min=1 step=1 max=5>
+                  </div>
+               </div>
+
+               <div class="v-container ">
+                  <div class="container spacing-right">
+                  <label><b>Graphics</b></label>
+                  <input type="number"  name="graphics" required min=1 step=1 max=5>
+                  </div>
+
+                  <div class="container spacing-left">
+                  <label><b>Music</b></label>
+                 <input type="number"  name="music" required min=1 step=1 max=5>
+                  </div>
+               </div>
+
+
+
+                <div class="v-container ">
+                   <div >
+                  <b>Genre<b>
+                  <select name="genre">
+                    <option>Action</option>
+                    <option>Romance</option>
+                    <option>Thriller</option>
+                    <option>Horror</option>
+                    <option>Sci-Fi</option>
+                  </select>
+                  </div>
+
+                  <div class="spacing">
+                  <label><b>Reccomendation</b></label>
+                  <span>
+                  <select name="reccomend">
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+              </span>
+                  </div>
+                 
+                 
+               </div>
+             
+
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            
+
+
+
+
+            </div>
+       
+          </form>
+
+        
+    </div>
+
+
+    <div id="id02" class="modal">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+      <form class="modal-content animate" action="/delete" method="POST">
+          <div class="container addpad">
+              
+            
+              <div class="v-container ">
+                <div class="container spacing-right">
+                <label><b>User</b></label>
+                <input type="text"  name="timedelete"  placeholder="User Name">
+                </div>
+
+                
+             </div>
+
+
+
+              
+               
+               
+            
+
+              <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+          
+
+
+
+
+          </div>
+     
+
+
+      </form>
+  </div>
+
+
+  <div id="id03" class="modal">
+    <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">×</span>
+    <form class="modal-content animate" action="/update" method="POST">
+        
+      
+      
+      <div class="container addpad">
+            
+        <div class="v-container ">
+          <div class="container spacing-right">
+          <label><b>Original User</b></label>
+          <input type="text"  name="timeupdate"  placeholder="User Name">
+          </div>
+
+          
+        </div>
+          
+            <div class="v-container ">
+              <div class="container spacing-right">
+              <label><b>User</b></label>
+              <input type="text"  name="timetoupdate"  placeholder="User not  Name">
+              </div>
+
+              <div class="container spacing-left">
+              <label><b>Title</b></label>
+              <input type="text" placeholder="Enter Password" name="psw">
+              </div>
+            </div>
+
+           <div class="v-container ">
+              <div class="container spacing-right">
+              <label><b>Story</b></label>
+              <input type="number"  name="story"  min=1 step=1 max=5>
+              </div>
+
+              <div class="container spacing-left">
+              <label><b>Plot</b></label>
+             <input type="number"  name="plot"  min=1 step=1 max=5>
+              </div>
+           </div>
+
+           <div class="v-container ">
+              <div class="container spacing-right">
+              <label><b>Graphics</b></label>
+              <input type="number"  name="graphics"  min=1 step=1 max=5>
+              </div>
+
+              <div class="container spacing-left">
+              <label><b>Score</b></label>
+             <input type="number"  name="score"  min=1 step=1 max=5>
+              </div>
+           </div>
+
+
+
+            <div class="v-container ">
+               <div >
+              <b>Genre<b>
+              <select name="genre">
+                <option>Action</option>
+                <option>Romance</option>
+                <option>Thriller</option>
+                <option>Horror</option>
+                <option>Sci-Fi</option>
+              </select>
+              </div>
+
+              <div class="spacing">
+              <label><b>Reccomendation</b></label>
+              <span>
+              <select name="reccomend">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+          </span>
+              </div>
+             
+             
+           </div>
+          
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        
+
+
+
+
+        </div>
+   
+
+
+    </form>
+</div>
+
+
+
+
+
+
+
+  <table id="alarms">
+    <tr>
+      <th>#</th>
+      <th class="absorbing-column">Title</th>
+      <th>Rating</th>
+      <th>Genre</th>
+      <th>Reccomendation</th>
+      
+    </tr>
+    
+    <% for(var i = 0; i < quotes.length; i++) {%>
+      
+
+      <tr>
+        <td><%=i+1%></td>
+   
+       <td><%= quotes[i].time %></td>
+       <td><%= quotes[i].music %></td>
+       <td><%= quotes[i].psw %></td>
+       <td>Yes</td>
+   
+     </tr>
+
+    <% } %>
+    
+    
+    
+    
+    
+  </table>
+
+
+<main>
+
+</main>
+
+
+</body>
+</html>

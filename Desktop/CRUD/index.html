@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css"   href="/css/signup.css">
+ 
+</head>
+<body >
+
+<script  src="/js/index.js"></script>
+ 
+ 
+<form action="/filter" method="POST">
+ 
+
+  <select>
+    <option>1</option>
+    <option>-1</option>
+  </select>
+  <button type="submit">Submit</button>
+</form>
+      
+     
+    
+     
+   
+
+
+<h2 id="rand-num">1</h2>
+    
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+ 
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <form class="modal-content animate" action="/quotes" method="POST">
+            <div class="container addpad">
+                
+               
+                <div class="v-container ">
+                  <div class="container spacing-right">
+                  <label><b>User</b></label>
+                  <input type="text"  name="time" required placeholder="User Name">
+                  </div>
+
+                  <div class="container spacing-left">
+                  <label><b>Title</b></label>
+                  <input type="text" placeholder="Enter Password" name="psw" required>
+                  </div>
+               </div>
+
+               <div class="v-container ">
+                  <div class="container spacing-right">
+                  <label><b>Story</b></label>
+                  <input type="number"  name="story" required min=1 step=1 max=5>
+                  </div>
+
+                  <div class="container spacing-left">
+                  <label><b>Plot</b></label>
+                 <input type="number"  name="plot" required min=1 step=1 max=5>
+                  </div>
+               </div>
+
+               <div class="v-container ">
+                  <div class="container spacing-right">
+                  <label><b>Graphics</b></label>
+                  <input type="number"  name="graphics" required min=1 step=1 max=5>
+                  </div>
+
+                  <div class="container spacing-left">
+                  <label><b>Music</b></label>
+                 <input type="number"  name="music" required min=1 step=1 max=5>
+                  </div>
+               </div>
+
+
+
+                <div class="v-container ">
+                   <div >
+                  <b>Genre<b>
+                  <select name="genre">
+                    <option>Action</option>
+                    <option>Romance</option>
+                    <option>Thriller</option>
+                    <option>Horror</option>
+                    <option>Sci-Fi</option>
+                  </select>
+                  </div>
+
+                  <div class="spacing">
+                  <label><b>Reccomendation</b></label>
+                  <span>
+                  <select name="reccomend">
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+              </span>
+                  </div>
+                 
+                 
+               </div>
+               </form>
+
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            
+<div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+        <form class="modal-content animate" action="/delete" method="POST">
+            <div class="container addpad">
+                
+               
+                <div class="v-container ">
+                  <div class="container spacing-right">
+                  <label><b>User</b></label>
+                  <input type="text"  name="time" required placeholder="User Name">
+                  </div>
+
+                  <div class="container spacing-left">
+                  <label><b>Title</b></label>
+                  <input type="text" placeholder="Enter Password" name="psw" required>
+                  </div>
+               </div>
+
+               <div class="v-container ">
+                  <div class="container spacing-right">
+                  <label><b>Story</b></label>
+                  <input type="number"  name="story" required min=1 step=1 max=5>
+                  </div>
+
+                  <div class="container spacing-left">
+                  <label><b>Plot</b></label>
+                 <input type="number"  name="plot" required min=1 step=1 max=5>
+                  </div>
+               </div>
+
+               <div class="v-container ">
+                  <div class="container spacing-right">
+                  <label><b>Graphics</b></label>
+                  <input type="number"  name="graphics" required min=1 step=1 max=5>
+                  </div>
+
+                  <div class="container spacing-left">
+                  <label><b>Music</b></label>
+                 <input type="number"  name="music" required min=1 step=1 max=5>
+                  </div>
+               </div>
+
+
+
+                <div class="v-container ">
+                   <div >
+                  <b>Genre<b>
+                  <select name="genre">
+                    <option>Action</option>
+                    <option>Romance</option>
+                    <option>Thriller</option>
+                    <option>Horror</option>
+                    <option>Sci-Fi</option>
+                  </select>
+                  </div>
+
+                  <div class="spacing">
+                  <label><b>Reccomendation</b></label>
+                  <span>
+                  <select name="reccomend">
+                    <option>Yes</option>
+                    <option>No</option>
+                  </select>
+              </span>
+                  </div>
+                 
+                 
+               </div>
+               </form>
+
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            
+
+
+
+
+            </div>
+       
+
+
+        </form>
+    </div>
+
+
+
+
+
+     
+       
+     
+
+
+
+
+
+
+<table id="alarms">
+  <tr>
+    <th>#</th>
+    <th class="absorbing-column">Title</th>
+    <th>Rating</th>
+    <th>Genre</th>
+    <th>Reccomendation</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr>
+     <td>1</td>
+
+    <td>Harry Potter and the goblet of Fire ae;fmoameg</td>
+    <td>4.7</td>
+    <td>Action</td>
+    <td>Yes</td>
+
+    
+   
+   
+     <td><button onclick="SomeEditRowFunction()" >Update</button></td>
+     <td><button onclick="SomeDeleteRowFunction()" >Delete</button></td>
+  
+  </tr>
+  
+  <tr>
+    <td>1</td>
+    <td>Harry Potter and the goblet of Fire</td>
+    <td>4.7</td>
+    <td>Action</td>
+    <td>Yes</td>
+
+    
+
+    <td><img src="edit.jpg" class="td-icon"></td>
+    <td><img src="delete.jpg" class="td-icon"></td>
+  
+  </tr>
+
+  <tr>
+    <td>1</td>
+
+    <td>Harry Potter and the goblet of Fire</td>
+    <td>4.7</td>
+    <td>Action</td>
+    <td>Yes</td>
+
+    
+
+    <td><img src="edit.jpg" class="td-icon"></td>
+    <td><img src="delete.jpg" class="td-icon"></td>
+  
+  </tr>
+ 
+  
+</table>
+
+
+
+<main>
+
+</main>
+
+
+</body>
+</html>
